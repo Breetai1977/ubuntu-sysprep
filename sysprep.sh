@@ -57,6 +57,14 @@ rm -f /etc/ssh/ssh_host_*
 apt clean
 apt autoremove
 
+# cleanup machine-id
+if [ -f /etc/machine-id ]; then
+  cat /dev/null > /etc/machine-id
+fi
+if [ - /var/lib/dbus/machine-id ]; then
+  cat /dev/null > /var/lib/dbus/machine-id
+fi
+
 rm ~/$this_file
 
 echo "\nShutdown and setup this VM template for cloning.\"
