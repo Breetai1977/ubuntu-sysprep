@@ -11,6 +11,9 @@ if [ `id -u` -ne 0 ]; then
   exit 1
 fi
 
+# Chane the machine-id
+dbus-uuidgen --ensure
+
 # Change VM Name
 echo -n "Set the name of this VM: "
 read vm_name_input
