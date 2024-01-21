@@ -19,7 +19,7 @@ echo -n "Set the name of this VM: "
 read vm_name_input
 
 new_vm_name=$(echo $vm_name_input | tr '[:upper:]' '[:lower:]' | tr -d [:space:])
-current_vm_name=${cat /etc/hostname)
+current_vm_name=$(cat /etc/hostname)
 hostnamectl set-hostname $new_vm_name
 hostname $new_vm_name
 sudo sed -i "s/$current_vm_name/$new_vm_name/g" /etc/hosts
