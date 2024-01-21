@@ -65,6 +65,6 @@ if [ -f /var/lib/dbus/machine-id ]; then
   cat /dev/null > /var/lib/dbus/machine-id
 fi
 
-rm ~/$this_file
+rm $this_file
 
 echo "\nShutdown and setup this VM template for cloning.\"
