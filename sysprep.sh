@@ -14,7 +14,7 @@ fi
 
 cd ~
 
-wget https://github.com/run_first.sh
+wget https://raw.githubusercontent.com/Breetai1977/ubuntu-sysprep/main/run_first.sh
 chmod +rwx run_first.sh
 chown $this_user:$this_user run_first.sh
 
