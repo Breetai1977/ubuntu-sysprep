@@ -2,7 +2,6 @@
 
 # sysprep Ubuntu for cloning
 
-this_file=${0##*/}
 this_user=$SUDO_USER
 
 id
@@ -63,6 +62,6 @@ if [ -f /var/lib/dbus/machine-id ]; then
   cat /dev/null > /var/lib/dbus/machine-id
 fi
 
-rm $this_file
+rm sysprep.sh
 
-echo "\nShutdown and setup this VM template for cloning.\"
+echo "\nShutdown and setup this VM template for cloning.\n"
