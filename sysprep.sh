@@ -61,7 +61,7 @@ apt autoremove
 if [ -f /etc/machine-id ]; then
   cat /dev/null > /etc/machine-id
 fi
-if [ - /var/lib/dbus/machine-id ]; then
+if [ -f /var/lib/dbus/machine-id ]; then
   cat /dev/null > /var/lib/dbus/machine-id
 fi
 
