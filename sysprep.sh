@@ -12,8 +12,6 @@ if [`id -u` -ne 0]; then
   exit 1
 fi
 
-cd ~
-
 wget https://raw.githubusercontent.com/Breetai1977/ubuntu-sysprep/main/run_first.sh
 chmod +rwx run_first.sh
 chown $this_user:$this_user run_first.sh
